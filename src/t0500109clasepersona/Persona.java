@@ -4,6 +4,10 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+/**
+ * 
+ * @param Persona en esta clase se procesan los datos de una persona (nombre, apellidos y fecha de nacimiento)
+ */
 public class Persona {
 
     private String nombre;
@@ -20,7 +24,12 @@ public class Persona {
         }
 
     }
-
+    
+    /**
+     * 
+     * @return este constructor devuelve el nombre, los apellidos y la fecha introducida
+     */
+    
     public Persona(String nombre, String apellidos, String fechaNacimiento) throws IllegalArgumentException {
 
         if ("".equals(nombre) || "".equals(apellidos)) {
@@ -32,6 +41,11 @@ public class Persona {
         }
 
     }
+/**
+ * 
+ * @param generarFecha procesa una fecha por partes para después devolver un String con la fecha completa
+ * @return 
+ */
 
     private LocalDate generarFecha(String fechaNacimiento) {
         int dia;
@@ -85,5 +99,7 @@ public class Persona {
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = generarFecha(fechaNacimiento);
     }
-
+/**
+ * Aquí están los getters y setters
+ */
 }

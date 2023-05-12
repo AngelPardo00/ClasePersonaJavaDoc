@@ -3,6 +3,10 @@ package t0500109clasepersona;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author angelpardo
+ */
 public class main {
 
     public static void main(String[] args) {
